@@ -1,25 +1,31 @@
+# AtliQ Hotels Data Analysis | Power BI Project
 
-# AtliQ Hotels Data Analysis Project
+## Business Problem Statement
 
-## Project Overview
+AtliQ Hotels operates across multiple cities and booking platforms, generating large volumes of transactional data. The business requires a consolidated analytical view to understand **occupancy trends, revenue performance, and booking platform effectiveness** to support strategic decision-making. This project addresses that need by transforming raw booking data into actionable insights.
 
-This project focuses on a comprehensive analysis of booking and revenue data for **AtliQ Hotels** with the objective of deriving actionable business insights. The analysis covers the complete data lifecycle — from raw data ingestion to insight generation — using structured datasets that reflect real-world hotel operations.
+---
 
-The project is designed to demonstrate **industry-standard data analysis practices**, including data cleaning, transformation, metric engineering, and analytical reasoning. While the domain is hospitality, the techniques applied are equally relevant to **People Analytics, HR Analytics, and enterprise reporting**.
+## Project Overview (ATS & Recruiter Optimized)
+
+This project demonstrates an end-to-end **data analytics workflow** using structured hospitality data. It covers data ingestion, cleaning, transformation, KPI creation, and insight generation using industry-standard practices. The analysis emphasizes business interpretation and stakeholder-ready outputs rather than isolated technical steps.
+
+Key focus areas:
+
+* Revenue and occupancy analysis across cities and room categories
+* Booking platform performance comparison
+* Data quality validation and metric standardization
+* Dashboard-ready analytical modeling
 
 ---
 
 ## Datasets Used
 
-The analysis is based on five CSV files:
-
-* `dim_date.csv` – Calendar and date-related attributes
-* `dim_hotels.csv` – Hotel and property-level details
+* `dim_date.csv` – Date and calendar attributes
+* `dim_hotels.csv` – Hotel and property details
 * `dim_rooms.csv` – Room category information
 * `fact_bookings.csv` – Transaction-level booking data
-* `fact_aggregated_bookings.csv` – Pre-aggregated booking metrics
-
-These datasets were integrated to create a unified analytical model.
+* `fact_aggregated_bookings.csv` – Aggregated booking metrics
 
 ---
 
@@ -27,72 +33,85 @@ These datasets were integrated to create a unified analytical model.
 
 ### 1. Data Import and Exploration
 
-* Imported all datasets into the analysis environment.
-* Reviewed schema, data types, and relationships between tables.
-* Identified key dimensions and measures relevant to hotel performance.
-* Explored booking platform distribution and booking patterns across properties and cities.
-
----
+* Imported multiple CSV files into Power BI.
+* Analyzed schema, data types, and table relationships.
+* Explored booking distribution across platforms, cities, and properties.
 
 ### 2. Data Cleaning and Validation
 
-* Removed records with **invalid guest counts** (zero or negative values).
-* Detected and eliminated **revenue outliers** using statistical boundaries to avoid skewed insights.
-* Addressed missing values and corrected inconsistencies in aggregated booking data.
-* Ensured referential integrity between fact and dimension tables.
+* Removed records with invalid guest counts (≤ 0).
+* Identified and removed revenue outliers using statistical thresholds.
+* Handled missing values and corrected inconsistencies in aggregated datasets.
+* Ensured data integrity across fact and dimension tables.
+
+### 3. Data Transformation & KPI Engineering
+
+* Calculated **Occupancy Percentage** at property and room-category levels.
+* Standardized occupancy metrics into percentage-based KPIs.
+* Integrated hotel, room, and booking data for multi-dimensional analysis.
+* Enabled time-based analysis using date dimensions.
+
+### 4. Insight Generation
+
+* Analyzed **revenue by city and booking platform**.
+* Evaluated **average revenue realized** by room category.
+* Compared **occupancy rates across cities and room types**.
+* Identified performance differences between booking platforms.
 
 ---
 
-### 3. Data Transformation and Feature Engineering
+## Key Insights (Interview-Ready)
 
-* Calculated **occupancy percentage** for each property based on room capacity and bookings.
-* Standardized occupancy metrics by converting them into percentage values.
-* Merged room, hotel, and booking datasets to enable multi-level analysis.
-* Enabled analysis by **room category, city, hotel, booking platform, and date**.
-
----
-
-### 4. Insight Generation and Analysis
-
-* Analyzed **revenue performance** by city and booking platform.
-* Evaluated **average revenue realized** across different room types.
-* Compared **occupancy rates** across cities and room categories.
-* Identified trends and performance differences between booking platforms.
-* Highlighted high-performing and underperforming segments to support data-driven decision-making.
+* Revenue and occupancy vary significantly by city and room category.
+* Certain booking platforms consistently deliver higher realized revenue.
+* Premium room categories generate higher revenue but show fluctuating occupancy.
+* City-level performance highlights demand concentration and seasonal patterns.
 
 ---
 
-## Key Business Insights
+## Relevance to HR / People Analytics Roles
 
-* Clear variation in revenue and occupancy across cities and room categories.
-* Certain booking platforms consistently outperform others in revenue realization.
-* Premium room categories generate higher revenue but show differing occupancy patterns.
-* City-level analysis reveals demand concentration and seasonality effects.
+Although based on hospitality data, the analytical framework directly applies to HR and People Analytics use cases:
 
----
-
-## Relevance to People Analytics and HR Analytics
-
-Although the project is based on hotel data, the analytical approach directly maps to HR and People Analytics use cases:
-
-* **Data Integration**: Combining multiple HR data sources (employee, performance, attendance) to build unified employee profiles.
-* **Data Quality Management**: Applying validation rules to ensure accuracy in HR systems.
-* **Metric Analysis**: Translating business KPIs into HR metrics such as productivity, engagement, and attrition.
-* **Decision Support**: Using analytical insights to support workforce planning and strategic HR decisions.
-* **Visualization and Reporting**: Presenting insights clearly for leadership and stakeholders.
+* **Data Integration**: Merging employee, performance, and engagement datasets.
+* **Data Quality Management**: Identifying invalid records and enforcing validation rules.
+* **Metric Design**: Translating business KPIs into HR metrics such as utilization, productivity, and attrition.
+* **Decision Support**: Enabling leadership decisions through data-driven insights.
+* **Stakeholder Communication**: Presenting insights in a clear, dashboard-driven format.
 
 ---
 
-## Tools and Skills Demonstrated
+## Tools & Skills Demonstrated
 
-* Data Cleaning and Validation
-* Data Modeling and Joins
+* Power BI (Data Modeling, DAX, Visualization)
+* Data Cleaning and Validation Techniques
 * KPI and Metric Engineering
-* Business-Oriented Insight Generation
-* Analytical Thinking and Structured Problem Solving
+* Business-Oriented Data Analysis
+* Dashboard Design for Stakeholders
+
+---
+
+## Repository Structure
+
+```
+AtliQ-Hotels-Analysis/
+│
+├── data/                  # Raw CSV datasets
+├── dashboards/            # Power BI screenshots (PNG)
+├── powerbi/               # Power BI files (.pbix)
+├── README.md
+└── LICENSE
+```
+
+---
+
+## Notes on Files
+
+* Dashboard screenshots are provided for public viewing.
+* The Power BI (.pbix) file may be shared on request or kept private to protect intellectual work.
 
 ---
 
 ## Conclusion
 
-This project demonstrates the ability to handle complex datasets, apply disciplined analytical methods, and translate raw data into meaningful insights. The skills showcased are transferable across domains such as **hospitality analytics, sales analytics, and people analytics**, making this project suitable for real-world, industry-facing applications.
+This project reflects a structured, industry-aligned approach to data analytics. The skills demonstrated are transferable to **Power BI Analyst, Business Analyst, and People Analytics roles**, with a strong emphasis on data quality, insight generation, and stakeholder communication.
